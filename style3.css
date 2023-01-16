@@ -2,131 +2,248 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica Neue,Roboto,Ubuntu,sans-serif;
+    /* background-color: #000; */
 }
 
-html, body{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+/* header section */
+.nav-section{
+    display: flex;
+    padding: 20px 4rem 20px 4rem;
+    justify-content: space-between;
+    color: #E5E5E5;
+    background-color: #000;
 }
 
-a{
-    text-decoration: none;
-}
-
-.container{
-    background-image: linear-gradient(360deg,transparent 50%,rgba(0, 0, 0, 0.5)),url(/IMAGES/page3.png);
+i{
     color: #fff;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-size: 20px;
 }
 
-img{
-    width: 7rem;
-    margin: 2rem 0 0 3rem;
+#netflix-header-logo{
+    width: 100px;
+    height: 34px;
 }
 
-h2{
-    text-align: left;
-    color: #fff;
+#profile-picture{
+    width: 20px;
+    height: 20px;
 }
 
-form{
-    max-width: 300px;
-    display: block;
-    margin: 3rem auto;
-    padding: 2rem 3em 5rem 3rem;
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 0.86;
-}
-
-#dot{
-    font-size: 10px;
-}
-
-input[type=email]{
-    width: 100%;
-    padding: 7px 10px;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-}
-
-input[type=password]{
-   width: 100%;
-   padding: 7px 10px;
-   margin: 10px 0 24px 0;
-   border-radius: 5px;
-   background-color: #333;
-   color: #fff;
-}
-input[type=submit]{
-    width: 100%;
-    padding: 10px 0;
-    background-color: #Eb0914;
-    color: #fff;
-    border-radius: 5px;
-} 
-
-input[type=submit]::placeholder{
-    text-align: center;
-}
-
-::placeholder{
-    text-align: left;
-}
-
-.div-1{
+.nav-options-1{
     display: flex;
     justify-content: space-between;
-    color:  #B3B3B3;
-    font-size: 12px;
+    font-weight: 500;
+    padding: 0 0 0 2rem;
+    margin: -11px 0 0 0;
 }
 
-.div-2{
+.nav-options-1 p{
+    padding: 0 15px 0 0;
+}
+
+.nav-options-1 p:hover{
+    transform: scaleX(1.1);
+    transition: 0.5s;
+}
+
+.nav-section-1{
     display: flex;
-    gap: 5px;
-    color:  #B3B3B3;
+    justify-content: space-between;
+}
+
+.nav-section-2{
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-text{
     font-size: 12px;
-    margin: 20px 0 0 0;
+    margin: 1.6px 0 0 0;
 }
 
-.div-3{
-    color:  #B3B3B3;
-    font-size: 12px;
+/* Hero-section */
+.hero-section{
+    padding: 0 4rem 0 4rem;
+    background-image: url(/IMAGES/MoviePoster\ \(20\).png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    object-fit: cover;
+    color: #ffffff;
+    /* margin: -5rem 0 0 0; */
 }
 
-.ri-facebook-box-fill{
-    color: #3B579D;
-    font-size: 16px;
+#hero-header-text{
+    font-size: 5rem;
+    font-weight: 1000;
+    padding: 6rem 0 0 0;
+    text-align: left;
+    letter-spacing: -3px;
 }
 
-#login{
-    margin: 1px 0 0 0;
+#hero-text-1{
+    font-size: 3.6rem;
+    padding: 0 0 0 0;
+    text-align: center;
+    width: 350px;
+    margin: -6.3rem 0 0 0;
+}
+
+.a{
+    display: flex;
+}
+
+.b{
+    width: 50%;
+}
+
+.red-box{
+    color: #fff;
+    background-color: red;
     font-size: 10px;
+    width: 17px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
 }
 
-#dark{
-    font-weight: 800;
+.red-box  #top{
+    font-size: 8px;
+    padding: -5px 0 0 0;
+}
+
+.red-box #num{
+    font-size: 14px;
+    font-weight: 700;
+    margin: -12px 0 0 0;
+}
+
+.red{
+    display: flex;
+    gap: 10px;
+}
+
+#hero-text-2{
+    margin: 2px 0 0 0;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#hero-text-3{
+    font-size: 20px;
+    width: 460px;
+    text-align: left;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.button-1{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    padding: 0px 30px;
+}
+
+.button-1 i{
+    color: #000;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+
+.button-2{
+    display: flex;
+    gap: 10px;
+    background-color:rgba(255, 255, 255, 0.3) ;
+    color: #fff;
+    padding: 0px 25px;
+}
+
+.button-2 i{
+    font-size: 25px;
+    margin: 12px 0 0 0;
+}
+
+#hero-text-4{
+    font-weight: 700;
+    line-height: -60px;
+}
+
+#hero-text-5{
+    font-weight: 700;
+}
+
+#hero-text-6{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
     color: #fff;
 }
 
-#blue{
-    color: #3B579D;
-    font-weight: 800;
-    font-size: 12px;
+.hero-section-2-images{
+    display: flex;
+    gap: 3px;
 }
 
-#dot{
-    color:  #B3B3B3;
+.hero-section-2-images img{
+    width: 250px;
 }
 
+.image-3 img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-4 img{
+    width: 208px;
+}
+
+main{
+    padding: 2rem 0 0 0;
+}
+
+main, footer{
+    background-color: #000;
+    padding: 0 4rem 0 4rem;
+}
+
+#number{
+    width: 50px;
+}
+
+.number-images{
+    display: flex;
+    gap: 13px;
+}
+
+#num-img{
+    width: 195px;
+    height: 130px;
+}
+
+.images-6{
+    display: flex;
+    gap: 7px;
+}
+
+.part-4{
+    display: flex;
+    gap: 10px;
+}
+
+.part-4 img{
+    width: 210px;
+    height: 200px;
+}
+
+/* footer */
 footer{
-    background-color: rgba(0, 0, 0, 0.75);
-    opacity: 0.86;
+    background-color: #000;
     padding: 2rem 0;
-    color:  #B3B3B3;
+    color: #808080;
 }
 
 .footer-part2{
@@ -136,17 +253,15 @@ footer{
 }
 
 .footer-part{
-    max-width: 500px;
+    max-width: 800px;
     display: block;
     margin: 0 auto;
 }
 
 .footer-div{
     border: 1px solid #B3B3B3;
-    /* text-align: center; */
-    display: flex;
-    gap: 7px;
-    padding: 5px ;
+    text-align: center;
+    width: 100px;
 }
 
 #globe{
@@ -159,38 +274,4 @@ footer{
 
 #footer-text{
     font-size: 12px;
-}
-hr{
-    display: none;
-}
-@media screen and (max-width: 740px) {
-    .container{
-        background-image: none;
-        background-color: black;
-    }
-    form{
-        max-width: none;
-    }
-    input[type=email], input[type=password], input[type=submit]{
-        height: 50px;
-    }
-    hr{
-        display: block;
-        border: 0.5px solid white;
-        width: 95%;
-    }
-}
-@media screen and (max-width: 576px){
-    form{
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-    .footer-part2{
-        display: grid;
-        grid-template-columns: repeat(2, 150px);
-        padding: 20px;
-    }
-    #footer-text{
-        padding-left: 30px;
-    }
 }
